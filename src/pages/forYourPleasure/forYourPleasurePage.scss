@@ -1,0 +1,17 @@
+@import "../../styles/tools.scss";
+
+.forYourPleasurePage {
+  &__cards {
+    padding: 60px 0 60px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @include sm {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

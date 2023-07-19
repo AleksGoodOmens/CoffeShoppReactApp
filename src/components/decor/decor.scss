@@ -1,0 +1,44 @@
+@import "../../styles/variables/variables.scss";
+
+.decor {
+  &.dark {
+    .decor {
+      &__line {
+        background-color: var(--primary);
+      }
+      &__svg {
+        svg {
+          path {
+            fill: var(--primary);
+          }
+        }
+      }
+    }
+  }
+  &__line {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--secondary);
+    transform: translateY(-5px);
+  }
+  &__svg {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 0 25px 0 25px;
+    svg {
+      path {
+        fill: var(--secondary);
+      }
+    }
+  }
+}
+
+.divider {
+  height: 2px;
+  max-width: 240px;
+  width: 100%;
+  background-color: var(--primary);
+  margin: 0 auto;
+}

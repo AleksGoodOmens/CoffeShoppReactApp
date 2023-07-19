@@ -1,0 +1,59 @@
+@import "./fonts/fonts.scss";
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Merienda, "Shantell Sans", cursive;
+  font-size: 14px;
+
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+}
+.container {
+  position: relative;
+  max-width: 830px;
+  &-sm {
+    max-width: 727px;
+  }
+}
+
+.animated {
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/tools.scss";
+.cardPage {
+  text-align: left;
+  .container-sm {
+    max-width: 895px;
+  }
+  .about-beans__photo {
+    flex: 1 0 40%;
+    min-width: 290px;
+    align-self: stretch;
+    padding: 50px 0;
+    img {
+      position: static;
+    }
+  }
+}
+.fz24rem {
+  font-size: rem(24);
+}

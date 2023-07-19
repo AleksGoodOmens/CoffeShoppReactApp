@@ -1,0 +1,25 @@
+@import "../../styles/tools.scss";
+.about-beans {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 79px;
+  margin: 70px auto 60px auto;
+  @include md {
+    flex-wrap: nowrap;
+  }
+  &__photo {
+    margin: 0;
+    position: relative;
+    flex: 0 0 272px;
+    min-height: 452px;
+    img {
+      position: absolute;
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

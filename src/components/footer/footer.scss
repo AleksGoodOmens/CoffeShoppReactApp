@@ -1,0 +1,43 @@
+@import "../../styles/tools.scss";
+.footer {
+  padding: 30px 0px 20px 0px;
+  .navigation {
+    position: static;
+    justify-content: center;
+    text-align: center;
+    &__link {
+      position: static;
+      margin-bottom: rem(20);
+      a {
+        color: var(--primary);
+        &:hover {
+          color: var(--primary-light);
+        }
+      }
+    }
+    &__logo {
+      svg {
+        path {
+          fill: var(--primary);
+        }
+      }
+    }
+  }
+  div {
+    text-align: center;
+  }
+  .decor {
+    margin-top: 30px;
+    svg {
+      path {
+        fill: var(--primary);
+      }
+    }
+  }
+  .line {
+    background-color: var(--primary);
+  }
+  .language {
+    display: none;
+  }
+}

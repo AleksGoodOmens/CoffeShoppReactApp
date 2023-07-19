@@ -1,0 +1,17 @@
+@import "../../styles/tools.scss";
+
+.page-header {
+  text-align: center;
+  background: url(../../pages/ourCoffeePage/images/promo/promo-bg.jpg) center center / cover no-repeat;
+  padding: rem(122) 0 rem(80) 0;
+}
+.page-title {
+  font-size: rem(34);
+  color: var(--secondary);
+  font-weight: 700;
+  line-height: rem(58);
+  margin-bottom: 0;
+  @include sm {
+    font-size: rem(40);
+  }
+}

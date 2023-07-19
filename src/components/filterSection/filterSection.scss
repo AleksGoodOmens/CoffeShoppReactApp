@@ -1,0 +1,72 @@
+@import "../../styles/tools.scss";
+
+.filter {
+  padding: 60px 0 30px 0;
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__label {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    span {
+      min-width: fit-content;
+    }
+    // flex-wrap: wrap;
+
+    gap: 20px;
+  }
+  &__input-text {
+    flex: 1 0 140px;
+    font-size: rem(12);
+    width: 140px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    padding: rem(6) rem(16);
+  }
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    div {
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+  &__btn {
+    min-height: 30px;
+    min-width: 75px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    background-color: transparent;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    @include sm {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    padding-top: 40px;
+    .item__wrapper {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+.btn__active {
+  border: 2px solid var(--primary);
+}
